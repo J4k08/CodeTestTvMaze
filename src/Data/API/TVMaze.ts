@@ -25,7 +25,7 @@ async function api(input:string):Promise<Series[]> {
     });
     return shows;
 }
-// parses json to array (Series) with Shows, returns  
+// parses json to array (Series) with Shows, returns 
 const parseResult = (resultData:any):Series[] => {
 
     let shows:Series[] = [];

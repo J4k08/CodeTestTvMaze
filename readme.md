@@ -1,6 +1,6 @@
 # TVMAZE Code Test
 
-A react native code test
+A react native code test (WIP)
 
 ## Work in progress:
 
@@ -11,6 +11,8 @@ the code will continue with empty objects instead. Figure out how to process the
 * Error handling: data from api could be null, the parse function in TVMaze.ts must be better prepared for that.
 
 * Better Design options
+
+* More user feedback (eg, if request turns up empty, if there's no internet connection, etc etc)
 
 
 ## Node modules
