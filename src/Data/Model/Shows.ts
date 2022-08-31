@@ -1,34 +1,31 @@
 export interface Series {
     show: Show;
-  }
-  
-  export interface Show {
+}
+
+export interface Show {
     id: number;
     name: string;
-    url: string;
     image: {
-      medium: string;
+        medium: string;
     };
     summary: string;
-  }
+}
 
-  
-  export const Shows: Series[] = [
+
+export const Shows: Series[] = [
     {
         show: {
             id: 139,
-            url: "https://www.tvmaze.com/shows/139/girls",
             name: "Girls",
             image: {
                 medium: "https://static.tvmaze.com/uploads/images/medium_portrait/31/78286.jpg",
             },
-            summary:"This Emmy winning series is a comic look at the assorted humiliations and rare triumphs of a group of girls in their 20s."
+            summary: "This Emmy winning series is a comic look at the assorted humiliations and rare triumphs of a group of girls in their 20s."
         },
     },
     {
         show: {
             id: 713,
-            url: "https://www.tvmaze.com/shows/713/spongebob-squarepants",
             name: "SpongeBob SquarePants",
             image: {
                 medium: "https://static.tvmaze.com/uploads/images/medium_portrait/418/1047279.jpg"
@@ -40,7 +37,6 @@ export interface Series {
     {
         show: {
             id: 481,
-            url: "https://www.tvmaze.com/shows/11464/batman-unlimited",
             name: "The Batman",
             image: {
                 medium: "https://static.tvmaze.com/uploads/images/medium_portrait/38/96515.jpg"
@@ -52,7 +48,6 @@ export interface Series {
     {
         show: {
             id: 41734,
-            url: "https://www.tvmaze.com/shows/42437/kamp-koral-spongebobs-under-years",
             name: "Kamp Koral: SpongeBob\'s Under Years",
             image: {
                 medium: "https://static.tvmaze.com/uploads/images/medium_portrait/401/1002521.jpg"
@@ -61,74 +56,74 @@ export interface Series {
 
         },
     },
-    
-  ];
 
-  
-    /*id:             number;
-    url:            string;
-    name:           string;
-    type:           string;
-    language:       string;
-    genres:         string[];
-    status:         string;
-    runtime:        number;
-    averageRuntime: number;
-    premiered:      Date;
-    ended:          Date;
-    officialSite:   string;
-    schedule:       Schedule;
-    rating:         Rating;
-    weight:         number;
-    network:        Network;
-    webChannel:     null;
-    dvdCountry:     null;
-    externals:      Externals;
-    image:          Image;
-    summary:        string;
-    updated:        number;
-    _links:         Links;
+];
+
+
+/*id:             number;
+url:            string;
+name:           string;
+type:           string;
+language:       string;
+genres:         string[];
+status:         string;
+runtime:        number;
+averageRuntime: number;
+premiered:      Date;
+ended:          Date;
+officialSite:   string;
+schedule:       Schedule;
+rating:         Rating;
+weight:         number;
+network:        Network;
+webChannel:     null;
+dvdCountry:     null;
+externals:      Externals;
+image:          Image;
+summary:        string;
+updated:        number;
+_links:         Links;
 }
 
 export interface Links {
-    self:            Previousepisode;
-    previousepisode: Previousepisode;
+self:            Previousepisode;
+previousepisode: Previousepisode;
 }
 
 export interface Previousepisode {
-    href: string;
+href: string;
 }
 
 export interface Externals {
-    tvrage:  number;
-    thetvdb: number;
-    imdb:    string;
+tvrage:  number;
+thetvdb: number;
+imdb:    string;
 }
 
 export interface Image {
-    medium:   string;
-    original: string;
+medium:   string;
+original: string;
 }
 
 export interface Network {
-    id:           number;
-    name:         string;
-    country:      Country;
-    officialSite: string;
+id:           number;
+name:         string;
+country:      Country;
+officialSite: string;
 }
 
 export interface Country {
-    name:     string;
-    code:     string;
-    timezone: string;
+name:     string;
+code:     string;
+timezone: string;
 }
 
 export interface Rating {
-    average: number;
+average: number;
 }
 
 export interface Schedule {
-    time: string;
-    days: string[];
+time: string;
+days: string[];
 }
 */

@@ -7,11 +7,11 @@ import { ListSearchResult } from './Components/ListSearchResult';
 const App: FC = () => {
 
   return (
-  <SafeAreaView style={styles.container}>
-    <View style={styles.container}>
-      <Search />          
-    </View>
-  </SafeAreaView>
+    <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
+        <Search />
+      </View>
+    </SafeAreaView>
   )
 }
 /*

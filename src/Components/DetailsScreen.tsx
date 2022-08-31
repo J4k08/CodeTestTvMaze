@@ -1,6 +1,7 @@
 import React, { FC, useState } from 'react';
-import { View, Text, Button, StyleSheet, Image, Modal
-  } from 'react-native';
+import {
+    View, Text, Button, StyleSheet, Image, Modal
+} from 'react-native';
 import { Show } from '../Data/Model/Shows';
 
 
@@ -11,17 +12,17 @@ interface ModalProps {
 }
 
 // Simple 'detail view', or modal component
-export const DetailsScreen: FC<ModalProps> = (props) =>  {
+export const DetailsScreen: FC<ModalProps> = (props) => {
     return (
         <Modal visible={props.visible} animationType='slide'>
             <View style={styles.container}>
                 <View style={styles.contentWrapper}>
                     <View style={styles.modelContent}>
                         <Text style={styles.title}>
-                        {props.show.name}</Text>
+                            {props.show.name}</Text>
                         <Image style={styles.image}
-                            source={{uri: props.show.image.medium}}
-                            />
+                            source={{ uri: props.show.image.medium }}
+                        />
                         <Text style={styles.summary}>
                             {props.show.summary}</Text>
                         <Button title='Close' onPress={props.onClose}></Button>
@@ -29,7 +30,7 @@ export const DetailsScreen: FC<ModalProps> = (props) =>  {
                 </View>
             </View>
         </Modal>
-      );
+    );
 };
 
 const styles = StyleSheet.create({
@@ -47,15 +48,15 @@ const styles = StyleSheet.create({
     },
     image: {
         padding: 15,
-        alignSelf: "center", 
-        width: 150, 
+        alignSelf: "center",
+        width: 150,
         height: 150,
     },
     title: {
         padding: 15,
         alignSelf: "center",
         fontSize: 40,
-        
+
     },
     summary: {
         fontSize: 15,

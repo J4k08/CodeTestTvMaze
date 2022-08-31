@@ -14,28 +14,28 @@ export const ListSearchResult: FC<Show> = (props) => {
     return (
         <View>
             <TouchableOpacity
-            onPress={ () => {setOpenModal(true)}}>
-    
-            <View style={styles.container}>
-                <View
-                    style={{
-                    ...styles.listItem,
-                    alignItems: "flex-start"                        
-                    }}>
-                   <Text>{props.name}</Text>
-               </View>
-                <View style={{ ...styles.listItem, alignItems: "flex-end"}}>
-                    <Image
-                    style={{width: 50, height: 50}}
-                    source={{uri: props.image.medium}}
-                    />
+                onPress={() => { setOpenModal(true) }}>
+
+                <View style={styles.container}>
+                    <View
+                        style={{
+                            ...styles.listItem,
+                            alignItems: "flex-start"
+                        }}>
+                        <Text>{props.name}</Text>
+                    </View>
+                    <View style={{ ...styles.listItem, alignItems: "flex-end" }}>
+                        <Image
+                            style={{ width: 50, height: 50 }}
+                            source={{ uri: props.image.medium }}
+                        />
+                    </View>
                 </View>
-            </View>
             </TouchableOpacity>
             <DetailsScreen
-            show={props}
-            visible={openModal}
-            onClose={onClose}
+                show={props}
+                visible={openModal}
+                onClose={onClose}
             ></DetailsScreen>
         </View>
     );
